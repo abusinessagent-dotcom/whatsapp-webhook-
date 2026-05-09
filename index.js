@@ -28,8 +28,8 @@ app.get("/webhook", (req, res) => {
 
 // 📩 AUTO REPLY FUNCTION
 async function sendMessage(to) {
-  const token = "YOUR_ACCESS_TOKEN"; // Meta से लो
-  const phoneNumberId = "YOUR_PHONE_NUMBER_ID"; // Meta से लो
+  const token = "EAAVFZAdxHALkBRS9X3ZCijYQM8vq2oNRYk0q9opm6mbCoLiSDkZAVq3ZCgC0MLToXTkPkCCZAxeEvowLfAU1UykKx33Upxu3i7ZCNjBDhrSmZBVR9WMD3DUSaYqaTp967XWJSDi2kp1SFJxio3h2KLZAnaqrPF9IQ9feyaDfZCBufXFqz0u2YwkoYm9ZCOXe30MOjpUCDrlGNGN6ZB2ZBd42FwJn1ji3gfwCSzP72XeZCvjfAeE8ZCkGjHe7MJxUTQk5XkX5ZBkAYipZBotB8EdBB4oc75Ya2x5kfAZDZD"; // Meta से लो
+  const phoneNumberId = "1122015147663326"; // Meta से लो
 
   await fetch(`https://graph.facebook.com/v18.0/${phoneNumberId}/messages`, {
     method: "POST",
